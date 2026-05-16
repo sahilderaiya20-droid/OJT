@@ -1,0 +1,27 @@
+.static {
+  position: static; /* Acts as the anchor for absolute children */
+  border: 5px solid #701717;
+}
+
+.relative
+{
+    position: relative;
+    border: solid 2px;
+    height: auto;
+    width: auto;
+    left: 30px;
+}
+
+.absolute
+{
+    position: absolute;
+    border: solid 2px;
+}
+
+.fixed
+{
+    position: fixed;
+    border: solid 3px;
+    right: 20px;
+    bottom: 20px;
+}

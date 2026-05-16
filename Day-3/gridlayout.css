@@ -1,0 +1,18 @@
+body
+{
+    background-color: aqua;
+}
+nav
+{
+    background-color: black;
+}
+nav a{ color: white; padding: 10px;}
+
+header h1 
+{
+    background-color: white;
+    text-align: center; 
+    margin-left: 500px; 
+    margin-right: 500px;
+}
+
