@@ -1,0 +1,17 @@
+.float
+{
+    float: left;
+    padding: 20px;
+    background-color: red;
+}
+
+.p
+{
+    float: right;
+    color: blue;
+    border: 3px solid ;
+    background-color: chartreuse;
+    padding: 20px;
+    margin-top: 20px;
+
+}
