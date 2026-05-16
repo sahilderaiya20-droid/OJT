@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{ margin: 10px; padding: 5px; box-sizing: border-box;}
 
 body
@@ -72,4 +73,80 @@ footer
             display: block;
             margin: 10px 0;
         }
+=======
+*{ margin: 10px; padding: 5px; box-sizing: border-box;}
+
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua;
+}
+
+header h1
+{
+    background-color: blueviolet;
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 20px;
+}
+nav a
+{
+    color: yellow;
+    background-color: red;
+
+}
+section h2
+{
+    color: blue;
+    text-align: center;
+}
+
+
+.main-section
+{
+    text-align: center;
+    color: rebeccapurple;
+}
+
+button
+{
+    color: crimson;
+    background-color:blanchedalmond;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 3%;
+    margin: 5%;
+    width: auto;
+} 
+ .btn:hover 
+{
+    color: black;
+    background-color:chartreuse;
+
+}
+
+footer
+{
+    color:white;
+    background-color: blue;
+    display: flex;
+    padding-left: 0px;
+    padding-right: 0%;
+}
+
+    @media (max-width:768px)
+    {
+        header
+        {
+            padding: 20px;
+
+        }
+
+        nav a
+        {
+            display: block;
+            margin: 10px 0;
+        }
+>>>>>>> 68c1affa939808b36878a1de50e9a0a53e66fad3
     } 
