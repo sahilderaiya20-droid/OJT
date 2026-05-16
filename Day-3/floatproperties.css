@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .float
 {
     float: left;
@@ -15,22 +14,4 @@
     padding: 20px;
     margin-top: 20px;
 
-=======
-.float
-{
-    float: left;
-    padding: 20px;
-    background-color: red;
-}
-
-.p
-{
-    float: right;
-    color: blue;
-    border: 3px solid ;
-    background-color: chartreuse;
-    padding: 20px;
-    margin-top: 20px;
-
->>>>>>> 68c1affa939808b36878a1de50e9a0a53e66fad3
 }
