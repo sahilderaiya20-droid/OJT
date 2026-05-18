@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+
+<body>
+    <h2>registration form</h2>
+    <form id="Regform">
+        <label>FIRST NAME:</label>
+        <input type="text" placeholder="enter your name"><br>
+
+        <label>LAST NAME:</label>
+        <input type="text" placeholder="enter your last name"><br>
+
+        <label>EMAIL :</label>
+        <input type="email" name="EMAIL" placeholder="enter your email"><br>
+
+        <label>GENDER</label>
+        <input type="radio" name="male" value="male">male
+        <input type="radio" name="female" value="fenale">female <br>
+
+        <label for="birthdate">BIRTHDATE</label>
+        <input type="date" name="birthdate"><br>
+
+        <label for="adress">ADRESS</label>
+        <textarea name="adress" rows="3"></textarea><br>
+
+        <label for="button"></label>
+        <input type="submit" name="button" value="submit">
+    </form>
+
+    <script>
+        function validate() {
+            var form1 = document.getElementById("RegForm");
+            var name = form1.FIRSTNAME.value;
+            var email = form1.LASTNAME.value;
+            var phone = form1.EMAIL.value;
+            var what = form1.BIRTHDAY.value;
+            var password = form1.Password.value;
+            var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+            var regPhone = /^\d{10}$/;
+            if (name == "") {
+                window.alert("Please Enter Your Name");
+                return false;
+            }
+            else if (email == "" || !regEmail.test(email)) {
+                window.alert("Please enter a valid e-mail address.");
+                return false;
+            }
+            else if (password == "") {
+                alert("Please enter your password");
+                return false;
+            }
+            else if (password.length < 6) {
+                alert("Password should be atleast 6 character long");
+                return false;
+            }
+            else if (phone == "" || !regPhone.test(phone)) {
+                alert("Please enter valid phone number.");
+                return false;
+            }
+            else if (what.selectedIndex == -1) {
+                alert("Please enter your course.");
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

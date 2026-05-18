@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Amount</title>
+</head>
+
+<body>
+
+    Select Product:
+    <select id="product">
+        <option value="1000">Laptop</option>
+        <option value="2000">PC</option>
+        <option value="3000">TV</option>
+        <option value="4000">Mobile Phone</option>
+        <option value="5000">Tablet</option>
+    </select>
+
+    <br><br>
+
+    Net Price:
+    <input type="text" id="price">
+
+    <br><br>
+
+    Quantity:
+    <input type="number" id="quantity">
+
+    <br><br>
+
+    Total Amount:
+    <input type="text" id="totalamount">
+
+    <script>
+
+        var product = document.getElementById("product");
+        var quantity = document.getElementById("quantity");
+        var totalamount = document.getElementById("totalamount");
+        var price = document.getElementById("price");
+
+        // Show selected product price
+        product.addEventListener("change", () => {
+            price.value = product.value;
+            calculateTotal();
+        });
+
+        // Calculate total when quantity changes
+        quantity.addEventListener("input", () => {
+            calculateTotal();
+        });
+
+        function calculateTotal() {
+            totalamount.value = product.value * quantity.value;
+        }
+
+    </script>
+
+</body>
+
+</html>
